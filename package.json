@@ -1,0 +1,19 @@
+{
+  "name": "adrauth-postgres",
+  "version": "1.0.0",
+  "description": "Postgres connector for adrauth",
+  "main": "adrauth-postgres.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pbxx/adrauth-postgres.git"
+  },
+  "author": "Donavan Lewis",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/pbxx/adrauth-postgres/issues"
+  },
+  "homepage": "https://github.com/pbxx/adrauth-postgres#readme"
+}
