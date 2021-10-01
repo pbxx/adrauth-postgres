@@ -1,6 +1,6 @@
 {
   "name": "adrauth-postgres",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Postgres connector for adrauth",
   "main": "adrauth-postgres.js",
   "scripts": {
@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/pbxx/adrauth-postgres#readme",
   "dependencies": {
-    "kindlogs": "^1.1.1"
+    "kindlogs": "^2.0.0"
   }
 }
