@@ -124,7 +124,7 @@ module.exports = {
 		}
 		delete(table, cases, opArray) {
 			return new Promise((resolve, reject) => {
-				var console = new KindLogger({fname: 'dbactions.delete'});
+				var console = new KindLogs({fname: 'dbactions.delete'});
 				try {
 					var fName = "db.delete";
 					//object keys will become columns, object values will be written to those columns
