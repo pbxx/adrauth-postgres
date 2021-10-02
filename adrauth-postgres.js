@@ -71,7 +71,7 @@ module.exports = {
 							
 							if (colsArr.length > 1) {
 								//iterate through all keys
-								for (key of colsArr) {
+								for (var key of colsArr) {
 									if (key == colsArr[colsArr.length-1]) {
 										//this is the last key, dont add a comma to <cols>
 										cols += key;
@@ -898,16 +898,16 @@ module.exports = {
 				var console = new KindLogs('dbactions.logRequest');
 				//console.log(ip, ipInfo, path)
 				//check if ip exists in DB at path
-				module.exports.selectCols("uniquevisitors", "uvid", {ip})
+				this.selectCols("uniquevisitors", "uvid", {ip})
 				.then((resp) => {
 					if (resp.rows.length > 0) {
 						//unique visitor exists, get requestlogs
 							if (resp.rows.length > 0) {
 								//request for user and path exists, update request counts
-								module.exports.insert("requestlogs", {ip, path})
+								this.insert("requestlogs", {ip, path})
 								.then((resp) => {
 									
-									module.exports.increment("uniquevisitors", "reqs", 1, {ip})
+									this.increment("uniquevisitors", "reqs", 1, {ip})
 									.then((resp) => {
 										resolve(resp)
 									})
